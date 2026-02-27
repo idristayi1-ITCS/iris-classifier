@@ -54,7 +54,7 @@ import joblib
 #import os
 #print(os.getcwd())
 
-joblib.dump(Modelled, "iris-classifier/venv/iris-classifier/outputs/model_joblib")
+joblib.dump(Modelled, "iris-classifier/outputs/model_joblib")
 
 
 from sklearn.metrics import ConfusionMatrixDisplay
@@ -70,7 +70,7 @@ for title, normalize in titles_options:
     disp.ax_.set_title(title)
     print(title)
     print(disp.confusion_matrix)
-    plt.savefig("iris-classifier/venv/iris-classifier/outputs/confusion_matrix.png")
+    plt.savefig("iris-classifier/outputs/confusion_matrix.png")
     plt.show()
 
 
